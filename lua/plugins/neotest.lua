@@ -21,16 +21,6 @@ return {
             },
         })
     end,
-    opts = {
-        adapters = {
-            ["neotest-go"] = {
-                dap_go_enabled = true,
-            },
-            ["neotest-python"] = {
-                runner = "unittest",
-            }
-        },
-    },
     keys = {
         { "<leader>td", function() require("neotest").run.run({ strategy = "dap" }) end,                    desc = "Debug" },
         { "<leader>tf", function() require("neotest").run.run(vim.fn.expand("%")) end,                      desc = "File" },

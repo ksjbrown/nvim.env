@@ -1,5 +1,6 @@
 vim.opt.autoindent = true
 vim.opt.clipboard = "unnamedplus" -- use system clipboard
+vim.opt.completeopt = { "menu" }
 vim.opt.confirm = true
 vim.opt.cursorline = true         -- highlight current line
 vim.opt.cursorlineopt = "number"
